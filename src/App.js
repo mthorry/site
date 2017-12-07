@@ -1,21 +1,32 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
+import Welcome from './components/Welcome'
+import Projects from './components/Projects'
+import Teaching from './components/Teaching'
+import Blog from './components/Blog'
+import NavBar from './components/NavBar'
 import './App.css';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome Matt's Page!</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <NavBar />
+        <Welcome />
+        <h2>PROJECTS</h2>
+        <Projects />
+        <h2>BLOG</h2>
+        <Blog />
+        <h2>TEACHING</h2>
+        <Teaching />
       </div>
     );
   }
 }
 
 export default App;
+
+// SECTIONS:
+  // WELCOME: Contact + Resume; Social Media Links
+  // PROJECTS: screenshots + links
+  // TEACHING + SCHOOL STUFF: curriculum + lessons
+  // BLOG POSTS: selected blog posts
