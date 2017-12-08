@@ -1,28 +1,56 @@
 import React, { Component } from 'react';
+import lineup from '../images/lineup.png'
+import events from '../images/events.png'
+import spots from '../images/spots.png'
+import earthquakes from '../images/earthquakes.png'
 
 class Work extends Component {
   render() {
     return (
       <div className="Work section flex-container">
         <div className="item">
-          <h3>Project 1</h3>
-          <img src="http://lorempixel.com/400/200/"/>
-          <p>Locavore green juice vaporware, chartreuse brooklyn shaman vinyl in. Officia vinyl small batch PBR&B mumblecore fugiat. Fixie in tumblr, twee dolore deserunt readymade cold-pressed slow-carb minim.</p>
+          <img src={lineup} className="thumb"/>
+          <div className="overlay">
+            <div className="text">
+              <h3>My Lineup 📺</h3>
+              <p><strong>Save favorite TV shows</strong></p>
+              <p>JavaScript, React, Redux, Ruby, Rails, PostgreSQL, Semantic UI</p>
+              <p><a href="https://my-lineup.herokuapp.com/dash" target="_blank">Explore App</a></p>
+            </div>
+          </div>
         </div>
         <div className="item">
-          <h3>Project 2</h3>
-          <img src="http://lorempixel.com/400/200/"/>
-          <p>Gochujang jean shorts master cleanse before they sold out authentic roof party excepteur twee plaid. Aliquip tacos gentrify DIY schlitz hella ut, fashion axe echo park cillum ugh letterpress.</p>
+          <img src={events} className="thumb"/>
+          <div className="overlay">
+            <div className="text">
+              <h3>Let's Have Fun Together 🎉</h3>
+              <p><strong>Find events + see who's going</strong></p>
+              <p>Ruby, Rails, PostgreSQL, Bootstrap UI</p>
+              <p><a href="https://lets-events.herokuapp.com/login" target="_blank">Explore App</a></p>
+            </div>
           </div>
+        </div>
         <div className="item">
-          <h3>Project 3</h3>
-          <img src="http://lorempixel.com/400/200/"/>
-          <p>Sint franzen ut shaman pickled do, vaporware letterpress ipsum snackwave hot chicken celiac distillery migas magna. Pariatur non unicorn locavore, aliqua proident marfa. </p>
+          <img src={spots} className="thumb"/>
+          <div className="overlay">
+            <div className="text">
+              <h3>Spots 🍻</h3>
+              <p><strong>Save favorite restaurants + bars</strong></p>
+              <p>JavaScript, React, Redux, Ruby, Rails, PostgreSQL, Semantic UI</p>
+              <p><a href="https://my-spots.herokuapp.com/login" target="_blank">Explore App</a></p>
+            </div>
           </div>
+        </div>
         <div className="item">
-          <h3>Project 4</h3>
-          <img src="http://lorempixel.com/400/200/"/>
-          <p>Taxidermy brunch culpa health goth, pok pok chartreuse farm-to-table excepteur. Pinterest freegan single-origin coffee, minim distillery slow-carb humblebrag migas palo santo mlkshk.</p>
+          <img src={earthquakes} className="thumb"/>
+          <div className="overlay">
+            <div className="text">
+              <h3>Earthquake Mapper 🗺</h3>
+              <p><strong>View earthquakes around world</strong></p>
+              <p>JavaScript, React, Google Maps</p>
+              <p><a href="https://earthquakes-mapper.herokuapp.com" target="_blank">Explore App</a></p>
+            </div>
+          </div>
         </div>
       </div>
     );
