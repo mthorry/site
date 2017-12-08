@@ -3,7 +3,14 @@
   text-align: center;
 }
 
-h1, h2 {
+h1 {
+  font-family: "Montserrat";
+  font-weight: 100;
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 26px;
   font-family: "Montserrat";
   font-weight: 100;
 }
@@ -58,6 +65,25 @@ p {
 .item:hover .overlay {
   bottom: 0;
   height: 100%;
+}
+
+.blog-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+  background-color: #CDFCFA;
+  border-radius: 5px;
+}
+
+.item:hover .blog-overlay {
+  height: 100%;
+  opacity: 1;
 }
 
 .item:hover .thumb {
@@ -118,6 +144,40 @@ p {
 
 .Teaching {
   background-color: #FFF;
+}
+
+.About {
+  background-image: url(./images/jumbo.jpg);
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: bottom;
+  height: 90vh;
+}
+
+.about-intro {
+  font-family: "Raleway";
+  font-weight: 100;
+  color: white;
+  font-size: 40px;
+}
+
+.about-intro strong {
+  font-weight: 900;
+  color: white;
+}
+
+.about-item {
+  font-family: "Raleway";
+  font-weight: 200;
+  font-size: 20px;
+  color: white;
+  padding: 10px 40px;
+}
+
+.about-item strong {
+  font-family: "Raleway";
+  font-weight: 800;
+  color: white;
 }
 
 .NavBar {

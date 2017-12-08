@@ -3,6 +3,7 @@ import Welcome from './components/Welcome'
 import Work from './components/Work'
 import Teaching from './components/Teaching'
 import Blog from './components/Blog'
+import About from './components/About'
 import NavBar from './components/NavBar'
 import './App.css';
 
@@ -12,11 +13,13 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <Welcome />
-        <h1>WORK</h1>
+        <h2>WORK</h2>
         <Work />
-        <h1>BLOG</h1>
+        <h2>ABOUT</h2>
+        <About />
+        <h2>BLOG</h2>
         <Blog />
-        <h1>TEACHING</h1>
+        <h2>TEACHING</h2>
         <Teaching />
       </div>
     );

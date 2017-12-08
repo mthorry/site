@@ -1,28 +1,52 @@
 import React, { Component } from 'react';
+import listeners from '../images/listeners.png'
+import redux from '../images/redux.png'
+import google from '../images/google.png'
+import performance from '../images/performance.png'
 
 class Blog extends Component {
   render() {
     return (
       <div className="Blog section flex-container">
         <div className="item">
-        <h3>Blog 1</h3>
-        <img src="../wormz.png"/>
-        <p>Locavore green juice vaporware, chartreuse brooklyn shaman vinyl in. Officia vinyl small batch PBR&B mumblecore fugiat. Fixie in tumblr, twee dolore deserunt readymade cold-pressed slow-carb minim.</p>
+          <img src={listeners} className="thumb"/>
+          <div className="blog-overlay">
+            <div className="text">
+              <h3>JavaScript Event Listeners👂</h3>
+              <p>Featured in Frontend Weekly</p>
+              <p><a href="https://medium.com/front-end-hacking/using-javascript-event-listeners-and-why-javascript-isnt-all-bad-bcd6cdf7f1f9" target="_blank">Read on Medium ↪</a></p>
+            </div>
+          </div>
         </div>
         <div className="item">
-        <h3>Blog 2</h3>
-        <img src="../wormz.png"/>
-        <p>Gochujang jean shorts master cleanse before they sold out authentic roof party excepteur twee plaid. Aliquip tacos gentrify DIY schlitz hella ut, fashion axe echo park cillum ugh letterpress.</p>
+          <img src={redux} className="thumb"/>
+          <div className="blog-overlay">
+            <div className="text">
+              <h3>My First Redux App 🥇</h3>
+              <p>Featured in Hacker Noon</p>
+              <p><a href="https://hackernoon.com/my-first-redux-app-with-a-rails-backend-4cf59332a994" target="_blank">Read on Medium ↪</a></p>
+            </div>
+          </div>
         </div>
         <div className="item">
-        <h3>Blog 3</h3>
-        <img src="../wormz.png"/>
-        <p>Sint franzen ut shaman pickled do, vaporware letterpress ipsum snackwave hot chicken celiac distillery migas magna. Pariatur non unicorn locavore, aliqua proident marfa. </p>
+          <img src={performance} className="thumb"/>
+          <div className="blog-overlay">
+            <div className="text">
+              <h3>Performance Optimization 🏁</h3>
+              <p>NewRelic & Chrome Dev Tools</p>
+              <p><a href="https://medium.com/@mthorry/application-performance-monitoring-with-newrelic-chrome-9910a379fb4" target="_blank">Read on Medium ↪</a></p>
+            </div>
+          </div>
         </div>
         <div className="item">
-        <h3>Blog 4</h3>
-        <img src="../wormz.png"/>
-        <p>Taxidermy brunch culpa health goth, pok pok chartreuse farm-to-table excepteur. Pinterest freegan single-origin coffee, minim distillery slow-carb humblebrag migas palo santo mlkshk.</p>
+          <img src={google} className="thumb"/>
+          <div className="blog-overlay">
+            <div className="text">
+              <h3>Google Maps and React 🗺</h3>
+              <p>Featured in Frontend Weekly</p>
+              <p><a href="https://medium.com/front-end-hacking/using-the-google-maps-javascript-api-in-a-react-project-b3ed734375c6" target="_blank">Read on Medium ↪</a></p>
+            </div>
+          </div>
         </div>
       </div>
     );
