@@ -4,8 +4,8 @@ class Welcome extends Component {
   render() {
     return (
       <div className="Welcome section">
-        <h1>Welcome!</h1>
-        <p>Iceland banh mi raclette bicycle rights wayfarers. Swag meh pop-up roof party et consequat sustainable man braid williamsburg pour-over typewriter. Enamel pin woke paleo migas photo booth sint small batch ennui slow-carb. Put a bird on it tote bag asymmetrical, flexitarian brunch kogi dolor celiac. Culpa meh messenger bag bicycle rights farm-to-table, voluptate eiusmod magna blog incididunt everyday carry aute.</p>
+        <h1 className="welcome-intro"><strong>Matt Thorry</strong> is a <strong>full stack web developer, software engineer, educator </strong>&<strong> all around good person</strong> living in New York City 🌃</h1>
+        <img src="https://pbs.twimg.com/profile_images/936284824767205376/yu8sFzhm_400x400.jpg" className="main-pic"/>
       </div>
     );
   }

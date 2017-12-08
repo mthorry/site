@@ -1,6 +1,11 @@
 .App {
-  background-image: url('./abstract.png');
+  background-image: url('./wormz.png');
   text-align: center;
+}
+
+h1, h2, h3 {
+  font-family: "Montserrat";
+  font-weight: 100;
 }
 
 .section {
@@ -24,53 +29,92 @@
 }
 
 .Welcome {
-  background-color: #293E72;
-  color: white;
+  display: flex;
+  background-color: #FFF;
+  height: 100vh;
   padding-left: 75px;
   padding-right: 75px;
+  align-items: center;
+  /*text-align: center;*/
+  justify-content: center;
 }
 
-.Projects {
-  background-color: #FFD570;
+.main-pic {
+  border-radius: 50%;
+  width: 30vw;
+  padding: 20px;
+}
+
+.welcome-intro {
+  font-family: "Raleway";
+  font-weight: 100;
+}
+
+.welcome-intro strong {
+  font-weight: 900;
+}
+
+.Work {
+  background-color: #FFF;
 }
 
 .Blog {
-  background-color: #469DD0;
+  background-color: #FFF;
 }
 
 .Teaching {
-  background-color: #50DBC0;
+  background-color: #FFF;
 }
 
-ul {
+.NavBar {
   list-style-type: none;
   width: 100%;
   position: fixed;
   margin: 0;
   padding: 0;
   overflow: hidden;
+  text-align: center;
   /*border: 1px solid #e7e7e7;*/
   background-color: #f1f1f1;
 }
 
-li {
+.nav-item {
+  font-family: "Montserrat";
+  font-weight: 300;
+  float: right;
+}
+
+.nav-last {
+  margin-right: 60px;
+}
+
+.nav-name {
+  font-family: "Montserrat";
+  font-weight: 100;
+  font-size: 36px;
+  display: block;
+  margin-left: 60px;
+  color: #666;
+  text-align: center;
+  padding: 7px 8px;
+  text-decoration: none;
   float: left;
 }
 
-li a {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
+.nav-link {
+  display: block;
+  color: #666;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
 }
 
-li a:hover:not(.active) {
-    background-color: #50DBC0;
-    color: #16223C;
+.nav-link:hover:not(.active) {
+  background-color: #A9F5F2;
+  color: #16223C;
 }
 
-li a.active {
-    color: white;
-    background-color: #4CAF50;
+.nav-link.active {
+  color: white;
+  background-color: #4CAF50;
 }

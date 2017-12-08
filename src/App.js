@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Welcome from './components/Welcome'
-import Projects from './components/Projects'
+import Work from './components/Work'
 import Teaching from './components/Teaching'
 import Blog from './components/Blog'
 import NavBar from './components/NavBar'
@@ -12,11 +12,11 @@ class App extends Component {
       <div className="App">
         <NavBar />
         <Welcome />
-        <h2>PROJECTS</h2>
-        <Projects />
-        <h2>BLOG</h2>
+        <h1>WORK</h1>
+        <Work />
+        <h1>BLOG</h1>
         <Blog />
-        <h2>TEACHING</h2>
+        <h1>TEACHING</h1>
         <Teaching />
       </div>
     );

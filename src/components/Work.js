@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
 
-class Projects extends Component {
+class Work extends Component {
   render() {
     return (
-      <div className="Projects section flex-container">
+      <div className="Work section flex-container">
         <div className="item">
           <h3>Project 1</h3>
           <img src="http://lorempixel.com/400/200/"/>
@@ -29,4 +29,4 @@ class Projects extends Component {
   }
 }
 
-export default Projects;
+export default Work;
