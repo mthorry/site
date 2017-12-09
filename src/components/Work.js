@@ -15,7 +15,7 @@ class Work extends Component {
               <h3>My Lineup 📺</h3>
               <p><strong>Save favorite TV shows</strong></p>
               <p>JavaScript, React, Redux, Ruby, Rails, PostgreSQL, Semantic UI</p>
-              <p><a href="https://my-lineup.herokuapp.com/dash" target="_blank">Explore App ↪</a></p>
+              <p><a href="https://my-lineup.herokuapp.com/dash" target="_blank">Explore App <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
         </div>
@@ -26,7 +26,7 @@ class Work extends Component {
               <h3>Let's Have Fun Together 🎉</h3>
               <p><strong>Find events + see who's going</strong></p>
               <p>Ruby, Rails, PostgreSQL, Bootstrap UI</p>
-              <p><a href="https://lets-events.herokuapp.com/login" target="_blank">Explore App ↪</a></p>
+              <p><a href="https://lets-events.herokuapp.com/login" target="_blank">Explore App  <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
         </div>
@@ -37,7 +37,7 @@ class Work extends Component {
               <h3>Spots 🍻</h3>
               <p><strong>Save favorite restaurants + bars</strong></p>
               <p>JavaScript, React, Redux, Ruby, Rails, PostgreSQL, Semantic UI</p>
-              <p><a href="https://my-spots.herokuapp.com/login" target="_blank">Explore App ↪</a></p>
+              <p><a href="https://my-spots.herokuapp.com/login" target="_blank">Explore App  <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
         </div>
@@ -48,7 +48,7 @@ class Work extends Component {
               <h3>Earthquake Mapper 🗺</h3>
               <p><strong>View earthquakes around world</strong></p>
               <p>JavaScript, React, Google Maps</p>
-              <p><a href="https://earthquakes-mapper.herokuapp.com" target="_blank">Explore App ↪</a></p>
+              <p><a href="https://earthquakes-mapper.herokuapp.com" target="_blank">Explore App  <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
         </div>

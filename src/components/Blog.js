@@ -14,7 +14,7 @@ class Blog extends Component {
             <div className="text">
               <h3>JavaScript Event Listeners👂</h3>
               <p>Featured in Frontend Weekly</p>
-              <p><a href="https://medium.com/front-end-hacking/using-javascript-event-listeners-and-why-javascript-isnt-all-bad-bcd6cdf7f1f9" target="_blank">Read on Medium ↪</a></p>
+              <p><a href="https://medium.com/front-end-hacking/using-javascript-event-listeners-and-why-javascript-isnt-all-bad-bcd6cdf7f1f9" target="_blank">Read on Medium  <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
         </div>
@@ -24,7 +24,7 @@ class Blog extends Component {
             <div className="text">
               <h3>My First Redux App 🥇</h3>
               <p>Featured in Hacker Noon</p>
-              <p><a href="https://hackernoon.com/my-first-redux-app-with-a-rails-backend-4cf59332a994" target="_blank">Read on Medium ↪</a></p>
+              <p><a href="https://hackernoon.com/my-first-redux-app-with-a-rails-backend-4cf59332a994" target="_blank">Read on Medium  <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
         </div>
@@ -34,7 +34,7 @@ class Blog extends Component {
             <div className="text">
               <h3>Performance Optimization 🏁</h3>
               <p>NewRelic & Chrome Dev Tools</p>
-              <p><a href="https://medium.com/@mthorry/application-performance-monitoring-with-newrelic-chrome-9910a379fb4" target="_blank">Read on Medium ↪</a></p>
+              <p><a href="https://medium.com/@mthorry/application-performance-monitoring-with-newrelic-chrome-9910a379fb4" target="_blank">Read on Medium  <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
         </div>
@@ -44,7 +44,7 @@ class Blog extends Component {
             <div className="text">
               <h3>Google Maps and React 🗺</h3>
               <p>Featured in Frontend Weekly</p>
-              <p><a href="https://medium.com/front-end-hacking/using-the-google-maps-javascript-api-in-a-react-project-b3ed734375c6" target="_blank">Read on Medium ↪</a></p>
+              <p><a href="https://medium.com/front-end-hacking/using-the-google-maps-javascript-api-in-a-react-project-b3ed734375c6" target="_blank">Read on Medium  <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
         </div>
