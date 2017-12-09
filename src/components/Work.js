@@ -13,7 +13,7 @@ class Work extends Component {
           <div className="overlay">
             <div className="text">
               <h3>My Lineup 📺</h3>
-              <p><strong>Save favorite TV shows</strong></p>
+              <p><strong>Save + schedule favorite TV shows</strong></p>
               <p>JavaScript, React, Redux, Ruby, Rails, PostgreSQL, Semantic UI</p>
               <p><a href="https://my-lineup.herokuapp.com/dash" target="_blank">Explore App <i class="fa fa-external-link"></i></a></p>
             </div>
@@ -36,7 +36,7 @@ class Work extends Component {
             <div className="text">
               <h3>Spots 🍻</h3>
               <p><strong>Save favorite restaurants + bars</strong></p>
-              <p>JavaScript, React, Redux, Ruby, Rails, PostgreSQL, Semantic UI</p>
+              <p>JavaScript, React, Ruby, Rails, PostgreSQL, Semantic UI</p>
               <p><a href="https://my-spots.herokuapp.com/login" target="_blank">Explore App  <i class="fa fa-external-link"></i></a></p>
             </div>
           </div>
