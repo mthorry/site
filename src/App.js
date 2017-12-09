@@ -11,25 +11,19 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <NavBar />
-        <Welcome />
-        <h2>WORK</h2>
-        <Work />
-        <h2>ABOUT</h2>
-        <About />
-        <h2>BLOG</h2>
-        <Blog />
-        <h2>TEACHING</h2>
-        <Teaching />
+          <NavBar />
+          <Welcome />
+        <h2 className="heading" id="work">WORK</h2>
+          <Work />
+        <h2 className="heading" id="about">ABOUT</h2>
+          <About />
+        <h2 className="heading" id="blog">BLOG</h2>
+          <Blog />
+        <h2 className="heading" id="teaching">TEACHING</h2>
+          <Teaching />
       </div>
     );
   }
 }
 
 export default App;
-
-// SECTIONS:
-  // WELCOME: Contact + Resume; Social Media Links
-  // PROJECTS: screenshots + links
-  // TEACHING + SCHOOL STUFF: curriculum + lessons
-  // BLOG POSTS: selected blog posts

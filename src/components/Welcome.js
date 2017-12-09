@@ -9,7 +9,7 @@ class Welcome extends Component {
         <br/>
           <a href="https://linkedin.com/in/mthorry" target="_blank"><i class="fa fa-linkedin i-hov" aria-hidden="true"/></a>  <a href="https://medium.com/@mthorry" target="_blank"><i class="fa fa-medium i-hov" aria-hidden="true"/></a>  <a href="https://github.com/mthorry" target="_blank"><i class="fa fa-github i-hov" aria-hidden="true"/></a>  <a href="mailto:mthorry@gmail.com?Subject=Hello%20there!" target="_top"><i class="fa fa-envelope i-hov" aria-hidden="true"/></a>
         <br/>
-          <a href="https://drive.google.com/file/d/1hCBsKbK_89p_gnv508ri8GScHPbTdwOO/view?usp=sharing" target="_blank"><button className="button resume-button">Resume <i class="fa fa-arrow-circle-down" aria-hidden="true"/></button></a>
+          <a href="https://drive.google.com/file/d/1hCBsKbK_89p_gnv508ri8GScHPbTdwOO/view?usp=sharing" target="_blank"><button className="button resume-button">Resume <i class="fa fa-paper-plane" aria-hidden="true"/></button></a>
 
 
         </h1>

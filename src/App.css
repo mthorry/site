@@ -108,6 +108,10 @@ p {
   text-decoration: none;
 }
 
+.heading {
+  /*margin-top: 50px;*/
+}
+
 .Welcome {
   display: flex;
   background-color: #FFF;
@@ -119,10 +123,12 @@ p {
   justify-content: center;
 }
 
-.Welcome a {
+.Welcome .i-hov {
   color: black;
   margin: 10px;
   display: inline-block;
+  -webkit-transition-duration: 0.2s;
+  transition-duration: 0.2s;
 }
 
 .Welcome .i-hov:hover {
