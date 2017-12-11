@@ -12,12 +12,12 @@ class Footer extends Component {
         <div className="footer-2">
           <h3>Contact</h3>
           <p><a href="mailto:mthorry@gmail.com?Subject=Hello%20there!" target="_top"><i class="fa fa-envelope i-hov" aria-hidden="true"/> mthorry@gmail.com</a></p>
-          <p><a href="https://linkedin.com/in/mthorry" target="_blank"><i class="fa fa-linkedin-square i-hov" aria-hidden="true"/> Linkedin</a></p>
+          <p><a href="https://linkedin.com/in/mthorry" target="_blank" className="footer-link"><i class="fa fa-linkedin-square i-hov" aria-hidden="true"/> Linkedin</a></p>
           <p><a href="https://github.com/mthorry" target="_blank"><i class="fa fa-github i-hov" aria-hidden="true"/> Github</a></p>
           <p><a href="https://medium.com/@mthorry" target="_blank"><i class="fa fa-medium i-hov" aria-hidden="true"/> Blog</a></p><br/>
           <h3>This Site</h3>
           <p>Made with ❤️ by <strong>Matthew Thorry</strong> using React, JavaScript and custom CSS</p>
-          <p>© 2017</p>
+          <p>Check out the repo <strong><a href="https://github.com/mthorry/site" target="_blank">here on github</a></strong> © 2017</p>
         </div>
       <div> </div>
       <div> </div>
