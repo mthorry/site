@@ -3,14 +3,19 @@
   text-align: center;
 }
 
+.header h1 {
+  font-size: 50px;
+  line-height: 30px;
+}
+
 h1 {
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
 }
 
 h2 {
-  font-size: 40px;
-  line-height: 26px;
+  font-size: 50px;
+  line-height: 10px;
   font-family: "Montserrat", sans-serif;
   font-weight: 100;
 }
@@ -27,6 +32,7 @@ p {
 
 .section {
   padding: 50px;
+
 }
 
 .flex-container {
@@ -188,9 +194,9 @@ p {
 .About {
   background-image: url(./images/jumbo.jpg);
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 1500px;
   background-position: bottom;
-  height: 90vh;
+  height: 700px;
 }
 
 .about-intro {
@@ -222,6 +228,10 @@ p {
   font-family: "Raleway", sans-serif;
   font-weight: 800;
   color: white;
+}
+
+.About span {
+  text-decoration: underline;
 }
 
 .NavBar {
@@ -278,4 +288,39 @@ p {
 .nav-link.active {
   color: white;
   background-color: #4CAF50;
+}
+
+.Footer {
+  list-style-type: none;
+  width: 100%;
+  overflow: hidden;
+  text-align: center;
+  align-items: center;
+  z-index: 500;
+  background: #bafffc;
+  background: -webkit-linear-gradient(to right, #bafffc, #f1f1f1);
+  background: linear-gradient(to right, #bafffc, #f1f1f1);
+  display: grid;
+  grid-template-columns: 10% 30% 50% 10%;
+}
+
+.Footer div {
+  text-align: center;
+}
+
+.Footer img {
+  padding: 15px 0px;
+  width: 100%
+}
+
+.Footer a {
+  text-decoration: none;
+  color: black;
+  line-height: 10px;
+  font-size: 18px;
+}
+
+.Footer h3 {
+  font-size: 30px;
+  line-height: 10px;
 }

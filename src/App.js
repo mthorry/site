@@ -5,6 +5,7 @@ import Teaching from './components/Teaching'
 import Blog from './components/Blog'
 import About from './components/About'
 import NavBar from './components/NavBar'
+import Footer from './components/Footer'
 import './App.css';
 
 class App extends Component {
@@ -21,6 +22,8 @@ class App extends Component {
           <Blog />
         <h2 className="heading" id="teaching">TEACHING</h2>
           <Teaching />
+        <h2 className="heading" id="footer">LIKE WHAT YOU SEE?</h2>
+          <Footer />
       </div>
     );
   }
