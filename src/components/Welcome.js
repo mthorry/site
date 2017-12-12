@@ -20,3 +20,5 @@ class Welcome extends Component {
 }
 
 export default Welcome;
+
+//   <a href="https://angel.co/mthorry" target="_blank"><i class="fa fa-angellist i-hov" aria-hidden="true"/></a>

@@ -121,7 +121,7 @@ p {
 .Welcome {
   display: flex;
   background-color: #FFF;
-  height: 90vh;
+  height: 81vh;
   padding-left: 75px;
   padding-right: 75px;
   align-items: center;
@@ -162,6 +162,10 @@ p {
     border: 2px solid;
     border-color: #00f2e7;
     color: white;
+}
+
+.down-arrow {
+  background-color: white;
 }
 
 .main-pic {
