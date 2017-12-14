@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Welcome from './components/Welcome'
-import Work from './components/Work'
+import Projects from './components/Projects'
 import Teaching from './components/Teaching'
 import Blog from './components/Blog'
 import About from './components/About'
@@ -18,8 +18,8 @@ class App extends Component {
           <div className="down-arrow">
           <img src={arrow} alt="Sroll"  width="50px"/>
           </div>
-        <h2 className="heading" id="work">WORK</h2>
-          <Work />
+        <h2 className="heading" id="projects">PROJECTS</h2>
+          <Projects />
         <h2 className="heading" id="about">ABOUT</h2>
           <About />
         <h2 className="heading" id="blog">BLOG</h2>

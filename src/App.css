@@ -121,7 +121,7 @@ p {
 .Welcome {
   display: flex;
   background-color: #FFF;
-  height: 81vh;
+  height: 80vh;
   padding-left: 75px;
   padding-right: 75px;
   align-items: center;
@@ -183,7 +183,7 @@ p {
   font-weight: 900;
 }
 
-.Work {
+.Projects {
   background-color: #FFF;
 }
 
