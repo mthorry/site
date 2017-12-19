@@ -21,7 +21,13 @@ class Welcome extends Component {
 
   formatCurrentWeather = (currentWeather) => {
     let current = ''
-    currentWeather.toLowerCase().charAt(currentWeather.length-1) === 'y' ? current = currentWeather.toLowerCase() + ' ' : current = currentWeather.toLowerCase() + 'y '
+    if (currentWeather.toLowerCase().charAt(currentWeather.length-1) === 'y') {
+      current = currentWeather.toLowerCase() + ' '
+    } else if (currentWeather.toLowerCase() === 'clear') {
+      current = 'beautiful '
+    } else {
+      current = currentWeather.toLowerCase() + 'y '
+    }
     return current
   }
 
