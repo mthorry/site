@@ -24,7 +24,7 @@ class Welcome extends Component {
     if (currentWeather.toLowerCase().charAt(currentWeather.length-1) === 'y') {
       current = currentWeather.toLowerCase() + ' '
     } else if (currentWeather.toLowerCase() === 'clear') {
-      current = 'beautiful '
+      current = 'cloudless '
     } else {
       current = currentWeather.toLowerCase() + 'y '
     }

@@ -19,9 +19,6 @@ class Footer extends Component {
           <p>Made with ❤️ by <strong>Matthew Thorry</strong> using React, JavaScript and custom CSS</p>
           <p>Check out the repo <strong><a href="https://github.com/mthorry/site" target="_blank" rel="noopener noreferrer">here on github</a></strong> © 2017</p>
         </div>
-      <div> </div>
-      <div> </div>
-
       </div>
     );
   }
