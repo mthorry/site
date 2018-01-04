@@ -25,6 +25,8 @@ class Welcome extends Component {
       current = currentWeather.toLowerCase() + ' '
     } else if (currentWeather.toLowerCase() === 'clear') {
       current = 'cloudless '
+    } else if (currentWeather.toLowerCase() === 'freezing fog') {
+      current = 'freezing '
     } else {
       current = currentWeather.toLowerCase() + 'y '
     }
