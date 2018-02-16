@@ -48,7 +48,7 @@ class Welcome extends Component {
     return (
       <div className="Welcome section">
 
-        <h1 className="welcome-intro"><strong>Matt Thorry</strong> is a <strong>full stack web developer, software engineer, educator </strong>&<strong> all-around good person</strong> living in {currentWeather}<img src={icons[this.state.current.icon]} alt='' className='weatherIcon'/> New York City
+        <h1 className="welcome-intro"><strong>Matt Thorry</strong> is a <strong>full stack web engineer, educator </strong>&<strong> all-around good person</strong> living in {currentWeather}<img src={icons[this.state.current.icon]} alt='' className='weatherIcon'/> New York City
         <br/>
         <br/>
           <a href="https://linkedin.com/in/mthorry" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin-square i-hov" aria-hidden="true"/></a>  <a href="https://medium.com/@mthorry" target="_blank" rel="noopener noreferrer"><i className="fa fa-medium i-hov" aria-hidden="true"/></a>  <a href="https://github.com/mthorry" target="_blank" rel="noopener noreferrer"><i className="fa fa-github i-hov" aria-hidden="true"/></a>  <a href="mailto:mthorry@gmail.com?Subject=Hello%20there!" target="_top"><i className="fa fa-envelope i-hov" aria-hidden="true"/></a>
