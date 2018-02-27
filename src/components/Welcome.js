@@ -8,7 +8,7 @@ class Welcome extends Component {
   }
 
   fetchWeather = () => {
-    return fetch(`https://api.aerisapi.com//observations/10010?client_id=${accessId}&client_secret=${APIkey}`)
+    return fetch(`https://api.aerisapi.com/observations/10010?client_id=${accessId}&client_secret=${APIkey}`)
     .then((res) => res.json())
   }
 
