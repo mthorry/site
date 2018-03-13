@@ -14,7 +14,7 @@ class Projects extends Component {
             <div className="text">
               <h3>My Lineup 📺</h3>
               <p><strong>Save + schedule favorite TV shows</strong></p>
-              <p>JavaScript, React, Redux, Ruby, Rails, PostgreSQL, Semantic UI</p>
+              <p>JavaScript, React, Redux, Ruby, Rails, PostgreSQL</p>
               <p><a href="https://my-lineup.herokuapp.com/dash" target="_blank" rel="noopener noreferrer">Explore App <i className="fa fa-external-link"/></a></p>
               <p><a href="https://github.com/mthorry/tv-lineup-app" target="_blank" rel="noopener noreferrer">Repo <i className="fa fa-github" aria-hidden="true"/></a></p>
             </div>
@@ -38,7 +38,7 @@ class Projects extends Component {
             <div className="text">
               <h3>Spots 🍻</h3>
               <p><strong>Save favorite restaurants + bars</strong></p>
-              <p>JavaScript, React, Ruby, Rails, PostgreSQL, Semantic UI</p>
+              <p>JavaScript, React, Ruby, Rails, PostgreSQL</p>
               <p><a href="https://my-spots.herokuapp.com/login" target="_blank" rel="noopener noreferrer">Explore App  <i className="fa fa-external-link"></i></a></p>
               <p><a href="https://github.com/mthorry/restaurant-tracker-demo" target="_blank" rel="noopener noreferrer">Repo <i className="fa fa-github" aria-hidden="true"/></a></p>
             </div>
