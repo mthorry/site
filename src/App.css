@@ -1,3 +1,111 @@
+@media all and (max-width: 600px) {
+  .heading {
+    font-size: 25px;
+    line-height: 30px;
+  }
+
+  .About h1 {
+    font-size: 25px;
+  }
+
+  .About p, a {
+    font-size: 14px;
+    padding: 0px;
+    line-height: 14px;
+  }
+
+  .item {
+    position: relative;
+    width: 200px;
+    margin: 10px;
+  }
+
+  .thumb {
+    display: block;
+    width: 100%;
+    height: auto;
+    transition: .5s ease;
+  }
+
+  .overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: white;
+    opacity: .9;
+    overflow: hidden;
+    height:0;
+    transition: .5s ease;
+  }
+
+  .overlay h3, p, a {
+    font-size: 50%;
+    line-height: 50%;
+  }
+
+  .item:hover .overlay {
+    bottom: 0;
+    height: 100%;
+  }
+
+  .nav-link {
+    opacity: 0;
+  }
+
+  .NavBar {
+    height: 50px;
+  }
+
+  .NavBar .nav-name {
+    font-size: 36px;
+    margin-left: 10px;
+  }
+
+  .Welcome {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Welcome > h1 {
+    font-size: 20px;
+  }
+
+  .Welcome > .main-pic {
+    width: 200px
+  }
+
+  .Welcome .weatherIcon {
+    height: 15px;
+    width: 15px;
+  }
+
+  .Welcome a i {
+    font-size: 20px;
+  }
+
+  .Welcome .resume-button {
+    font-size: 18px;
+    width: 200px;
+  }
+
+  .Footer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .Footer p {
+    font-size: 15px;
+    line-height: 15px;
+  }
+
+  .Footer .footer-2 h3 {
+    font-size: 20px;
+  }
+
+}
+
+
 .App {
   background-image: url('./wormz.png');
   text-align: center;
@@ -44,7 +152,7 @@ p {
 
 .item {
   position: relative;
-  width: 40%;
+  width: 400px;
   margin: 10px;
 }
 
@@ -63,7 +171,7 @@ p {
   background-color: white;
   opacity: .9;
   overflow: hidden;
-  width: 100%;
+  width: 400px;
   height:0;
   transition: .5s ease;
 }
@@ -191,6 +299,8 @@ p {
 
 .Projects {
   background-color: #FFF;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .Blog {
@@ -310,7 +420,7 @@ p {
   background: #bafffc;
   background: -webkit-linear-gradient(to right, #bafffc, #f1f1f1);
   background: linear-gradient(to right, #bafffc, #f1f1f1);
-  display: grid;
+  display: flex;
   grid-template-columns: 10% 30% 50% 10%;
 }
 
@@ -319,8 +429,8 @@ p {
 }
 
 .Footer img {
-  padding: 15px 0px;
-  width: 100%
+  padding: 15px;
+  width: 300px;
 }
 
 .Footer a {
