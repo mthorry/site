@@ -356,7 +356,7 @@ p {
 
 .about-item a {
   color: white;
-  text-decoration: none;
+  /*text-decoration: none;*/
 }
 
 .about-item {
@@ -429,6 +429,11 @@ p {
 }
 
 .nav-link.active {
+  color: white;
+  background-color: #4CAF50;
+}
+
+.nav-link:focus {
   color: white;
   background-color: #4CAF50;
 }
