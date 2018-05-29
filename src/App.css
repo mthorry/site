@@ -14,6 +14,10 @@
     line-height: 14px;
   }
 
+  .About {
+    padding: 0px;
+  }
+
   .item {
     position: relative;
     width: 200px;
@@ -80,6 +84,12 @@
   .Welcome {
     display: flex;
     flex-wrap: wrap;
+    /*margin-top: 50px;*/
+    min-height: 85vh;
+  }
+
+  .welcome-intro {
+    padding-top: 15%;
   }
 
   .Welcome > h1 {
@@ -162,8 +172,7 @@ p {
 }
 
 .section {
-  padding: 50px;
-
+  padding: 20px;
 }
 
 .flex-container {
@@ -340,6 +349,7 @@ p {
   background-size: 1500px;
   background-position: bottom;
   height: 700px;
+  padding: 25px;
 }
 
 .about-intro {
@@ -472,4 +482,26 @@ p {
 .Footer h3 {
   font-size: 30px;
   line-height: 10px;
+}
+
+@media all and (min-width: 1600px) {
+  html {
+    padding-left: 15vw;
+    padding-right: 15vw;
+  }
+
+  .NavBar {
+    max-width: 70vw;
+  }
+}
+
+@media all and (min-width: 2200px) {
+  html {
+    padding-left: 25vw;
+    padding-right: 25vw;
+  }
+
+  .NavBar {
+    max-width: 50vw;
+  }
 }
