@@ -1,4 +1,4 @@
-@media all and (max-width: 600px) {
+@media all and (max-width: 770px) {
   .heading {
     font-size: 25px;
     line-height: 30px;
@@ -172,7 +172,12 @@ p {
 }
 
 .section {
-  padding: 20px;
+  padding: 25px;
+}
+
+.section-paragraph {
+  margin-right: 50px;
+  margin-left: 50px;
 }
 
 .flex-container {
@@ -184,7 +189,7 @@ p {
 
 .item {
   position: relative;
-  width: 500px;
+  width: 450px;
   margin: 10px;
 }
 
@@ -499,6 +504,7 @@ p {
   html {
     padding-left: 25vw;
     padding-right: 25vw;
+    font-size: 150%;
   }
 
   .NavBar {

@@ -9,7 +9,7 @@ class Teaching extends Component {
   render() {
     return (
       <div className="Teaching section flex-container">
-      <p>Some selected lessons from my time as a web development instructor and my previous career as an Earth Science teacher.</p>
+      <p className='section-paragraph'>Some selected lessons from my time as a web development instructor and my previous career as an Earth Science teacher.</p>
         <div className="item">
           <h3>Recursion Lecture 👨‍💻</h3>
           <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQiqWLpob5bEOGD-WZODZ-BvxFqQ0Iqs1RYKbhNZwTMNjSWmptIXIlrxIO46hqh4iPxYNtNLzzPNKvk/embed?start=false&loop=true&delayms=3000" frameborder="0" width="100%" height="300" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

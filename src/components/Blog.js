@@ -7,8 +7,9 @@ import performance from '../images/performance.png'
 class Blog extends Component {
   render() {
     return (
+      <div>
       <div className="Blog section flex-container">
-      <p>Here are some of my recent and favorite blog posts. I have thousands of views and hundreds of claps every month.</p>
+      <p className='section-paragraph'>Here are some of my recent and favorite blog posts. I have thousands of views and hundreds of claps every month.</p>
         <div className="item">
           <img src={redux} className="thumb"/>
           <div className="blog-overlay">
@@ -56,6 +57,7 @@ class Blog extends Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     );
   }
