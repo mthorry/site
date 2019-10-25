@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import hmu from '../images/hmu.gif'
 
 const accessId = process.env.REACT_APP_ACCESS_ID;
 const APIkey = process.env.REACT_APP_API_KEY
@@ -78,7 +79,7 @@ class Welcome extends Component {
             rel="noopener noreferrer"><button className="button resume-button">Resume <i className="fa fa-file-pdf-o"
               aria-hidden="true" /></button></a>
         </h1>
-        <img src="https://pbs.twimg.com/profile_images/936284824767205376/yu8sFzhm_400x400.jpg" className="main-pic" />
+        <img src={hmu} className="main-pic" />
       </div>
     );
   }
