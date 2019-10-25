@@ -1,2 +1,2 @@
 ## thorry.io
-My personal site that I made to display my work. Created using React, JavaScript and custom CSS.
+My personal site that I created using React + JavaScript. Deployed with Netlify, weather from Aeris.
