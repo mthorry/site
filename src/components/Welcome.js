@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
-const accessId = process.env.ACCESS_ID;
-const APIkey = process.env.API_KEY
+const accessId = process.env.REACT_APP_ACCESS_ID;
+const APIkey = process.env.REACT_APP_API_KEY
 class Welcome extends Component {
 
   state = {
