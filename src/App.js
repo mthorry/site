@@ -12,9 +12,9 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-          <NavBar />
+          {/* <NavBar /> */}
           <Welcome />
-          <div className="down-arrow">
+          {/* <div className="down-arrow">
           <img src={arrow} alt="Sroll"  width="50px"/>
           </div>
         <h2 className="heading" id="projects">PROJECTS</h2>
@@ -24,7 +24,7 @@ class App extends Component {
         <h2 className="heading" id="teaching">TEACHING</h2>
           <Teaching />
         <h2 className="heading" id="footer">LIKE WHAT YOU SEE?</h2>
-          <Footer />
+          <Footer /> */}
       </div>
     );
   }
