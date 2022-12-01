@@ -1,71 +1,61 @@
 import React, { Component } from 'react';
 import hmu from '../images/hmu.gif'
 
-const accessId = process.env.REACT_APP_ACCESS_ID;
-const APIkey = process.env.REACT_APP_API_KEY
+const APIkey = process.env.REACT_APP_WEATHER_API_KEY
+
 class Welcome extends Component {
 
   state = {
     current: null,
-    icons: null
+    icon: null
   }
 
-  fetchWeather = () => {
-    return fetch(`https://api.aerisapi.com/observations/11101?client_id=${accessId}&client_secret=${APIkey}`)
+  async fetchWeather() {
+    return fetch(`https://api.openweathermap.org/data/2.5/weather?lat=40.71&lon=-74.00&appid=${APIkey}`)
       .then((res) => res.json())
   }
 
-  componentDidMount = () => {
-    this.setState({ icons: this.getIcons() })
-    this.fetchWeather()
+
+  async componentDidMount() {
+    await this.fetchWeather()
       .then((json) => {
-        json.success ? this.setState({ current: json.response.ob }) : null
+        json.weather ? this.setState({ 
+          current: json.weather[0],
+          icon: json.weather[0].icon 
+        }) : null
       })
   }
 
 
   formatCurrentWeather = (currentWeather) => {
-    let current = ''
-    if (currentWeather.toLowerCase().charAt(currentWeather.length - 1) === 'y') {
-      current = currentWeather.toLowerCase() + ' '
-    } else if (currentWeather.toLowerCase() === 'clear') {
-      current = 'cloudless '
-    } else if (currentWeather.toLowerCase() === 'freezing fog') {
-      current = 'freezing '
-    } else if (currentWeather.toLowerCase().charAt(currentWeather.length - 1) === 'g') {
-      current = currentWeather.toLowerCase() + 'gy '
+    const lastChar = currentWeather.charAt(currentWeather.length - 1)
+
+    if (lastChar === 'g') {
+      currentWeather = currentWeather + 'gy '
+    } else if (lastChar === 'e' || lastChar === 's') {
+      currentWeather = currentWeather.slice(0, -1) + 'y'
+    } else if (currentWeather === 'clear') {
+      currentWeather = 'cloudless '
     } else {
-      current = currentWeather.toLowerCase() + 'y '
+      currentWeather = currentWeather + 'y '
     }
-    return current
-  }
-
-  getIcons = () => {
-    return this.importAll(require.context('../images/icons', false, /\.(png|jpe?g|svg)$/));
-  }
-
-  importAll = (r) => {
-    let icons = {};
-    r.keys().map((item, index) => { icons[item.replace('./', '')] = r(item); });
-    return icons;
+    return currentWeather
   }
 
   render() {
-    console.log(this.state.current)
-
     let currentWeather, image
 
     if (this.state.current) {
-      currentWeather = this.formatCurrentWeather(this.state.current.weatherPrimary)
-      image = <img src={this.state.icons[this.state.current.icon]} alt='' className='weatherIcon' />
+      currentWeather = this.formatCurrentWeather(this.state.current.main.toLowerCase())
+      image = <img src={`http://openweathermap.org/img/wn/${this.state.icon}@2x.png`} alt='' className='weatherIcon' />
     } else {
-      currentWeather = 'lovely'
-      image = '🌃'
+      currentWeather = ''
+      image = ''
     }
 
     return (
       <div className="Welcome section">
-        <h1 className="welcome-intro"><strong>Matt Thorry</strong> is a <strong>software engineer
+        <h1 className="welcome-intro"><strong>Matt Thorry</strong> is a <strong>software engineer</strong>, <strong>problem solver
               </strong> &<strong> all-around good person</strong> living in {currentWeather} {image} New York City
               <br />
           <br />
