@@ -19,7 +19,7 @@ class Welcome extends Component {
   async componentDidMount() {
     await this.fetchWeather()
       .then((json) => {
-        json.weather ? this.setState({ 
+        return json.weather ? this.setState({ 
           current: json.weather[0],
           icon: json.weather[0].icon 
         }) : null
@@ -47,7 +47,7 @@ class Welcome extends Component {
 
     if (this.state.current) {
       currentWeather = this.formatCurrentWeather(this.state.current.main.toLowerCase())
-      image = <img src={`http://openweathermap.org/img/wn/${this.state.icon}@2x.png`} alt='' className='weatherIcon' />
+      image = <img src={`http://openweathermap.org/img/wn/${this.state.icon}@2x.png`} alt={currentWeather} className='weatherIcon' />
     } else {
       currentWeather = ''
       image = ''
@@ -60,16 +60,16 @@ class Welcome extends Component {
               <br />
           <br />
           <a href="https://linkedin.com/in/mthorry" target="_blank" rel="noopener noreferrer"><i
-            className="fa fa-linkedin-square i-hov" aria-hidden="true" /></a> <a href="https://github.com/mthorry"
-              target="_blank" rel="noopener noreferrer"><i className="fa fa-github i-hov" aria-hidden="true" /></a> <a
+            className="fa fa-linkedin-square i-hov" /></a> <a href="https://github.com/mthorry"
+              target="_blank" rel="noopener noreferrer"><i className="fa fa-github i-hov" /></a> <a
                 href="mailto:mthorry@gmail.com?Subject=Hello%20there!" target="_top"><i className="fa fa-envelope i-hov"
-                  aria-hidden="true" /></a>
+                 /></a>
           <br />
           <a href="https://drive.google.com/open?id=1Jt9UmGjo2fi6HHDVIgvtxjjYNH9vZk-V" target="_blank"
             rel="noopener noreferrer"><button className="button resume-button">Resume <i className="fa fa-file-pdf-o"
-              aria-hidden="true" /></button></a>
+             /></button></a>
         </h1>
-        <img src={hmu} className="main-pic" />
+        <img src={hmu} className="main-pic" alt='hmu'/>
       </div>
     );
   }
